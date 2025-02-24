@@ -1,0 +1,2990 @@
+2025-02-24 12:29:33 ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.config' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.config
+    Value: "classpath:log4j2.xml"
+    Origin: class path resource [application.yml] - 21:13
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.classpath:log4j2.xml)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2025-02-24 12:30:57 ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.config' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.config
+    Value: "classpath:Log4j2.xml"
+    Origin: class path resource [application.yml] - 21:13
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.classpath:Log4j2.xml)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2025-02-24 12:32:44  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 12:32:44  INFO [myProject.searchMusical.SearchMusicalApplication] Starting SearchMusicalApplication using Java 17.0.10 with PID 5310 (/Users/namgieun/Desktop/Git/searchMusical/build/classes/java/main started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 12:32:44  INFO [myProject.searchMusical.SearchMusicalApplication] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 12:32:44  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 12:32:44  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2025-02-24 12:32:44  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+2025-02-24 12:32:44  INFO [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-24 12:32:44  INFO [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+2025-02-24 12:32:44  INFO [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-24 12:32:44  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+2025-02-24 12:32:44  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 461 ms
+2025-02-24 12:32:44  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 12:32:44  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 12:32:44  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 12:32:44  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 12:32:44  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 12:32:44  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73da303e
+2025-02-24 12:32:44  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 12:32:45  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 12:32:45  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 12:32:45  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 12:32:45 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 12:32:45 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 12:32:45  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 12:32:45  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 12:32:45  INFO [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-24 12:32:45  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+2025-02-24 12:32:45  INFO [myProject.searchMusical.SearchMusicalApplication] Started SearchMusicalApplication in 1.707 seconds (process running for 2.064)
+2025-02-24 12:32:45  INFO [myProject.searchMusical.SearchMusicalApplication] 안녕
+2025-02-24 12:33:14  INFO [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-24 12:33:14  INFO [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+2025-02-24 12:33:14  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 12:33:14  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 12:33:14  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 12:48:15  INFO [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [myProject.searchMusical.repository.BoardRepositoryTest]: BoardRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-24 12:48:15  INFO [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration myProject.searchMusical.SearchMusicalApplication for test class myProject.searchMusical.repository.BoardRepositoryTest
+2025-02-24 12:48:15  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 12:48:15  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Starting BoardRepositoryTest using Java 17.0.10 with PID 6659 (started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 12:48:15  INFO [myProject.searchMusical.repository.BoardRepositoryTest] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 12:48:15  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 12:48:15  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2025-02-24 12:48:15  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 12:48:15  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 12:48:15  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 12:48:15  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 12:48:15  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 12:48:16  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e0883f3
+2025-02-24 12:48:16  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 12:48:16  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 12:48:16  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 12:48:16  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 12:48:16 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 12:48:16 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 12:48:16  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 12:48:16  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 12:48:16  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Started BoardRepositoryTest in 1.705 seconds (process running for 2.387)
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 1
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 2
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 3
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 4
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 5
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 6
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 7
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 8
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 9
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 10
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 11
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 12
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 13
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 14
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 15
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 16
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 17
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 18
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 19
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 20
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 21
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 22
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 23
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 24
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 25
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 26
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 27
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 28
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 29
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 30
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 31
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 32
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 33
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 34
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 35
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 36
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 37
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 38
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 39
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 40
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 41
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 42
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 43
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 44
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 45
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 46
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 47
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 48
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 49
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 50
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 51
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 52
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 53
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 54
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 55
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 56
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 57
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 58
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 59
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 60
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 61
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 62
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 63
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 64
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 65
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 66
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 67
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 68
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 69
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 70
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 71
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 72
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 73
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 74
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 75
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 76
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 77
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 78
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 79
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 80
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 81
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 82
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 83
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 84
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 85
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 86
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 87
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 88
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 89
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 90
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 91
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 92
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 93
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 94
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 95
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 96
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 97
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 98
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 99
+2025-02-24 12:48:17 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:48:17  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 100
+2025-02-24 12:48:17  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 12:48:17  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 12:48:17  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 12:58:54  INFO [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [myProject.searchMusical.repository.BoardRepositoryTest]: BoardRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-24 12:58:54  INFO [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration myProject.searchMusical.SearchMusicalApplication for test class myProject.searchMusical.repository.BoardRepositoryTest
+2025-02-24 12:58:54  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 12:58:54  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Starting BoardRepositoryTest using Java 17.0.10 with PID 7688 (started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 12:58:54  INFO [myProject.searchMusical.repository.BoardRepositoryTest] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 12:58:54  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 12:58:54  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2025-02-24 12:58:54  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 12:58:54  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 12:58:54  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 12:58:54  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 12:58:54  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 12:58:55  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e0883f3
+2025-02-24 12:58:55  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 12:58:55  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 12:58:55  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 12:58:55  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 12:58:55 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 12:58:55 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 12:58:55  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 12:58:55  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 12:58:55  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Started BoardRepositoryTest in 1.671 seconds (process running for 2.343)
+2025-02-24 12:58:56 DEBUG [org.hibernate.SQL] 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.title,
+        b1_0.writer 
+    from
+        board b1_0 
+    where
+        b1_0.bno=?
+2025-02-24 12:58:56  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 12:58:56  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 12:58:56  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 12:59:08  INFO [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [myProject.searchMusical.repository.BoardRepositoryTest]: BoardRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-24 12:59:08  INFO [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration myProject.searchMusical.SearchMusicalApplication for test class myProject.searchMusical.repository.BoardRepositoryTest
+2025-02-24 12:59:08  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 12:59:08  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Starting BoardRepositoryTest using Java 17.0.10 with PID 7725 (started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 12:59:08  INFO [myProject.searchMusical.repository.BoardRepositoryTest] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 12:59:09  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 12:59:09  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-02-24 12:59:09  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 12:59:09  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 12:59:09  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 12:59:09  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 12:59:09  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 12:59:09  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a3509b0
+2025-02-24 12:59:09  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 12:59:09  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 12:59:09  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 12:59:10  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 12:59:10  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 12:59:10  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Started BoardRepositoryTest in 1.58 seconds (process running for 2.163)
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 1
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 2
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 3
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 4
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 5
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 6
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 7
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 8
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 9
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 10
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 11
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 12
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 13
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 14
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 15
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 16
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 17
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 18
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 19
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 20
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 21
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 22
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 23
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 24
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 25
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 26
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 27
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 28
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 29
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 30
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 31
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 32
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 33
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 34
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 35
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 36
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 37
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 38
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 39
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 40
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 41
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 42
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 43
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 44
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 45
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 46
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 47
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 48
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 49
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 50
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 51
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 52
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 53
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 54
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 55
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 56
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 57
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 58
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 59
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 60
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 61
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 62
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 63
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 64
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 65
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 66
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 67
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 68
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 69
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 70
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 71
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 72
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 73
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 74
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 75
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 76
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 77
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 78
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 79
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 80
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 81
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 82
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 83
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 84
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 85
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 86
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 87
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 88
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 89
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 90
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 91
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 92
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 93
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 94
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 95
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 96
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 97
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 98
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 99
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 12:59:10  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 100
+2025-02-24 12:59:10 DEBUG [org.hibernate.SQL] 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.title,
+        b1_0.writer 
+    from
+        board b1_0 
+    where
+        b1_0.bno=?
+2025-02-24 12:59:10  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 12:59:10  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 12:59:10  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 13:00:36  INFO [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [myProject.searchMusical.repository.BoardRepositoryTest]: BoardRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-24 13:00:36  INFO [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration myProject.searchMusical.SearchMusicalApplication for test class myProject.searchMusical.repository.BoardRepositoryTest
+2025-02-24 13:00:36  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 13:00:36  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Starting BoardRepositoryTest using Java 17.0.10 with PID 7858 (started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 13:00:36  INFO [myProject.searchMusical.repository.BoardRepositoryTest] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 13:00:37  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 13:00:37  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2025-02-24 13:00:37  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 13:00:37  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 13:00:37  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 13:00:37  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 13:00:37  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 13:00:37  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24010875
+2025-02-24 13:00:37  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 13:00:37  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 13:00:37  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 13:00:38  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 13:00:38  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 13:00:38  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Started BoardRepositoryTest in 1.49 seconds (process running for 2.059)
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 1
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 2
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 3
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 4
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 5
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 6
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 7
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 8
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 9
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 10
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 11
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 12
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 13
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 14
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 15
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 16
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 17
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 18
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 19
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 20
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 21
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 22
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 23
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 24
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 25
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 26
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 27
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 28
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 29
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 30
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 31
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 32
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 33
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 34
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 35
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 36
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 37
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 38
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 39
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 40
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 41
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 42
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 43
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 44
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 45
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 46
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 47
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 48
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 49
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 50
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 51
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 52
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 53
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 54
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 55
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 56
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 57
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 58
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 59
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 60
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 61
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 62
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 63
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 64
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 65
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 66
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 67
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 68
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 69
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 70
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 71
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 72
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 73
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 74
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 75
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 76
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 77
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 78
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 79
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 80
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 81
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 82
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 83
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 84
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 85
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 86
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 87
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 88
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 89
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 90
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 91
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 92
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 93
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 94
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 95
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 96
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 97
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 98
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 99
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    insert 
+    into
+        board
+        (content, title, writer) 
+    values
+        (?, ?, ?)
+2025-02-24 13:00:38  INFO [myProject.searchMusical.repository.BoardRepositoryTest] BNO: 100
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.title,
+        b1_0.writer 
+    from
+        board b1_0 
+    where
+        b1_0.bno=?
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.title,
+        b1_0.writer 
+    from
+        board b1_0 
+    where
+        b1_0.bno=?
+2025-02-24 13:00:38 DEBUG [org.hibernate.SQL] 
+    update
+        board 
+    set
+        content=?,
+        title=?,
+        writer=? 
+    where
+        bno=?
+2025-02-24 13:00:38  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 13:00:38  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 13:00:38  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 13:01:46  INFO [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [myProject.searchMusical.repository.BoardRepositoryTest]: BoardRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-24 13:01:46  INFO [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration myProject.searchMusical.SearchMusicalApplication for test class myProject.searchMusical.repository.BoardRepositoryTest
+2025-02-24 13:01:46  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 13:01:46  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Starting BoardRepositoryTest using Java 17.0.10 with PID 7977 (started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 13:01:46  INFO [myProject.searchMusical.repository.BoardRepositoryTest] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 13:01:46  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 13:01:46  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-02-24 13:01:46  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 13:01:46  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 13:01:46  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 13:01:47  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 13:01:47  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 13:01:47  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e030feb
+2025-02-24 13:01:47  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 13:01:47  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 13:01:47  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 13:01:47  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 13:01:47 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 13:01:47 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 13:01:47  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 13:01:47  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 13:01:47  INFO [myProject.searchMusical.repository.BoardRepositoryTest] Started BoardRepositoryTest in 1.513 seconds (process running for 2.082)
+2025-02-24 13:01:48 DEBUG [org.hibernate.SQL] 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.title,
+        b1_0.writer 
+    from
+        board b1_0 
+    where
+        b1_0.bno=?
+2025-02-24 13:01:48  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 13:01:48  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 13:01:48  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 15:47:23  INFO [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [myProject.searchMusical.repository.WebDriverTest]: WebDriverTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-24 15:47:23  INFO [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration myProject.searchMusical.SearchMusicalApplication for test class myProject.searchMusical.repository.WebDriverTest
+2025-02-24 15:47:23  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 15:47:23  INFO [myProject.searchMusical.repository.WebDriverTest] Starting WebDriverTest using Java 17.0.10 with PID 19691 (started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 15:47:23  INFO [myProject.searchMusical.repository.WebDriverTest] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 15:47:23  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 15:47:23  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2025-02-24 15:47:24  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 15:47:24  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 15:47:24  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 15:47:24  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 15:47:24  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 15:47:24  INFO [io.opentelemetry.api.GlobalOpenTelemetry] AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-02-24 15:47:24  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@520ee6b3
+2025-02-24 15:47:24  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 15:47:24  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 15:47:24  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 15:47:24  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 15:47:24 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 15:47:24 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 15:47:24  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 15:47:24  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 15:47:25  INFO [myProject.searchMusical.repository.WebDriverTest] Started WebDriverTest in 1.697 seconds (process running for 2.397)
+2025-02-24 15:47:30  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 15:47:30  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 15:47:30  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 15:48:07  INFO [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [myProject.searchMusical.repository.WebDriverTest]: WebDriverTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-24 15:48:07  INFO [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration myProject.searchMusical.SearchMusicalApplication for test class myProject.searchMusical.repository.WebDriverTest
+2025-02-24 15:48:07  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 15:48:07  INFO [myProject.searchMusical.repository.WebDriverTest] Starting WebDriverTest using Java 17.0.10 with PID 19820 (started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 15:48:07  INFO [myProject.searchMusical.repository.WebDriverTest] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 15:48:07  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 15:48:07  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-02-24 15:48:07  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 15:48:07  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 15:48:07  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 15:48:07  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 15:48:07  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 15:48:07  INFO [io.opentelemetry.api.GlobalOpenTelemetry] AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-02-24 15:48:08  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27210a3b
+2025-02-24 15:48:08  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 15:48:08  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 15:48:08  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 15:48:08  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 15:48:08 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 15:48:08 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 15:48:08  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 15:48:08  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 15:48:08  INFO [myProject.searchMusical.repository.WebDriverTest] Started WebDriverTest in 1.67 seconds (process running for 2.354)
+2025-02-24 15:48:12  INFO [myProject.searchMusical.repository.WebDriverTest] Received!
+2025-02-24 15:48:12  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 15:48:12  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 15:48:12  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 15:52:05  INFO [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [myProject.searchMusical.repository.WebDriverTest]: WebDriverTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-24 15:52:05  INFO [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration myProject.searchMusical.SearchMusicalApplication for test class myProject.searchMusical.repository.WebDriverTest
+2025-02-24 15:52:05  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 15:52:05  INFO [myProject.searchMusical.repository.WebDriverTest] Starting WebDriverTest using Java 17.0.10 with PID 20140 (started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 15:52:05  INFO [myProject.searchMusical.repository.WebDriverTest] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 15:52:05  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 15:52:05  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2025-02-24 15:52:05  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 15:52:05  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 15:52:05  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 15:52:05  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 15:52:05  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 15:52:06  INFO [io.opentelemetry.api.GlobalOpenTelemetry] AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-02-24 15:52:06  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15f11bfb
+2025-02-24 15:52:06  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 15:52:06  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 15:52:06  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 15:52:06  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 15:52:06 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 15:52:06 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 15:52:06  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 15:52:06  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 15:52:06  INFO [myProject.searchMusical.repository.WebDriverTest] Started WebDriverTest in 1.532 seconds (process running for 2.109)
+2025-02-24 15:52:08  INFO [myProject.searchMusical.repository.WebDriverTest] Received!zzzz
+2025-02-24 15:52:08  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 15:52:08  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 15:52:08  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 15:57:32  INFO [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [myProject.searchMusical.repository.WebDriverTest]: WebDriverTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-24 15:57:32  INFO [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration myProject.searchMusical.SearchMusicalApplication for test class myProject.searchMusical.repository.WebDriverTest
+2025-02-24 15:57:32  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 15:57:32  INFO [myProject.searchMusical.repository.WebDriverTest] Starting WebDriverTest using Java 17.0.10 with PID 20604 (started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 15:57:32  INFO [myProject.searchMusical.repository.WebDriverTest] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 15:57:32  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 15:57:32  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2025-02-24 15:57:32  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 15:57:32  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 15:57:32  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 15:57:33  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 15:57:33  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 15:57:33  INFO [io.opentelemetry.api.GlobalOpenTelemetry] AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-02-24 15:57:33  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71df5f30
+2025-02-24 15:57:33  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 15:57:33  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 15:57:33  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 15:57:33  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 15:57:33 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 15:57:33 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 15:57:33  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 15:57:33  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 15:57:33  INFO [myProject.searchMusical.repository.WebDriverTest] Started WebDriverTest in 1.571 seconds (process running for 2.165)
+2025-02-24 15:57:39  INFO [myProject.searchMusical.repository.WebDriverTest] KREAM | 한정판 거래의 FLEX
+2025-02-24 15:57:39  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 15:57:39  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 15:57:39  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-02-24 16:11:27  INFO [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 8.0.2.Final
+2025-02-24 16:11:27  INFO [myProject.searchMusical.SearchMusicalApplication] Starting SearchMusicalApplication using Java 17.0.10 with PID 21768 (/Users/namgieun/Desktop/Git/searchMusical/build/classes/java/main started by namgieun in /Users/namgieun/Desktop/Git/searchMusical)
+2025-02-24 16:11:27  INFO [myProject.searchMusical.SearchMusicalApplication] No active profile set, falling back to 1 default profile: "default"
+2025-02-24 16:11:28  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-24 16:11:28  INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2025-02-24 16:11:28  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+2025-02-24 16:11:28  INFO [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-24 16:11:28  INFO [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+2025-02-24 16:11:28  INFO [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-24 16:11:28  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+2025-02-24 16:11:28  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 492 ms
+2025-02-24 16:11:28  INFO [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-24 16:11:28  INFO [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-24 16:11:28  INFO [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2025-02-24 16:11:28  INFO [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-24 16:11:28  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2025-02-24 16:11:28  INFO [io.opentelemetry.api.GlobalOpenTelemetry] AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-02-24 16:11:28  INFO [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f6f65a4
+2025-02-24 16:11:28  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2025-02-24 16:11:28  WARN [org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-24 16:11:28  INFO [org.hibernate.orm.connections.pooling] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-24 16:11:29  INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-24 16:11:29 DEBUG [org.hibernate.SQL] 
+    drop table if exists board
+2025-02-24 16:11:29 DEBUG [org.hibernate.SQL] 
+    create table board (
+        bno bigint not null auto_increment,
+        content varchar(255),
+        title varchar(255),
+        writer varchar(255),
+        primary key (bno)
+    ) engine=InnoDB
+2025-02-24 16:11:29  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 16:11:31  WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-24 16:11:31  INFO [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-24 16:11:31  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+2025-02-24 16:11:31  INFO [myProject.searchMusical.SearchMusicalApplication] Started SearchMusicalApplication in 3.985 seconds (process running for 4.417)
+2025-02-24 16:11:31  INFO [myProject.searchMusical.SearchMusicalApplication] 안녕
+2025-02-24 16:11:34  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-24 16:11:34  INFO [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+2025-02-24 16:11:34  INFO [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+2025-02-24 16:11:40  INFO [myProject.searchMusical.controller.TestController] KREAM | 한정판 거래의 FLEX
+2025-02-24 16:12:05  INFO [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-24 16:12:05  INFO [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+2025-02-24 16:12:05  WARN [org.springframework.beans.factory.support.DisposableBeanAdapter] Custom destroy method 'close' on bean with name 'chromeDriver' propagated an exception: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bd25bca7d903e31200e157e37fa0ad5, close []]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: /var/folders/34/x6rw_j9x7dg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54894/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bd25bca7d903e31200e157e37fa0ad5
+2025-02-24 16:12:05  INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-24 16:12:05  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-02-24 16:12:05  INFO [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
