@@ -15,16 +15,17 @@ import lombok.*;
 public class Board {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long bno;
-
-    private String title;
+    private Long id;
 
     private String content;
 
     private String writer;
 
-    public void change(String title, String content) {
-        this.title = title;
+    private String date;
+
+    public Board(String content, String writer, String date) {
         this.content = content;
+        this.writer = writer;
+        this.date = date;
     }
 }

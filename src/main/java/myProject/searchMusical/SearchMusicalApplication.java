@@ -12,8 +12,6 @@ import org.springframework.context.annotation.Bean;
 public class SearchMusicalApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SearchMusicalApplication.class, args);
-
-		log.info("안녕");
 	}
 
 	@Bean
