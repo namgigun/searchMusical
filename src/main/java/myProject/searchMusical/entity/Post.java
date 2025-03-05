@@ -1,4 +1,4 @@
-package myProject.searchMusical.domain;
+package myProject.searchMusical.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString
-public class Board {
+public class Post {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,7 +23,7 @@ public class Board {
 
     private String date;
 
-    public Board(String content, String writer, String date) {
+    public Post(String content, String writer, String date) {
         this.content = content;
         this.writer = writer;
         this.date = date;

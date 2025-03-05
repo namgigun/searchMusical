@@ -1,43 +1,37 @@
 package myProject.searchMusical.repository;
 
 import lombok.extern.log4j.Log4j2;
-import myProject.searchMusical.domain.Board;
-import myProject.searchMusical.service.BoardService;
+import myProject.searchMusical.entity.Post;
+import myProject.searchMusical.service.PostService;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.List;
-import java.util.Optional;
 import java.util.stream.IntStream;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Log4j2
-class BoardRepositoryTest {
+class PostRepositoryTest {
 
     @Autowired
-    BoardRepository boardRepository;
+    PostRepository postRepository;
 
     @Autowired
     WebDriver webDriver;
 
     @Autowired
-    BoardService boardService;
+    PostService postService;
 
     @Test
     public void testInsert() {
         IntStream.rangeClosed(1, 100).forEach(i -> {
-            Board board = Board.builder()
+            Post post = Post.builder()
                     .content("content.." + i)
                     .writer("user" + (i % 10))
                     .build();
 
-            Board result = boardRepository.save(board);
+            Post result = postRepository.save(post);
             log.info("BNO: " + result.getId());
         });
     }
@@ -45,6 +39,6 @@ class BoardRepositoryTest {
     @Test
     public void testDelete() {
         Long bno = 1L;
-        boardRepository.deleteById(bno);
+        postRepository.deleteById(bno);
     }
 }

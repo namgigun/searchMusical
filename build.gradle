@@ -36,15 +36,16 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
-	// log4j 설정
-	implementation 'org.springframework.boot:spring-boot-starter-log4j2'
 
 	// 테스트 코드에 롬복 적용하기
 	testCompileOnly 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
+
+	// log4j2 설정
+	implementation 'org.springframework.boot:spring-boot-starter-log4j2'
 
 	//Querydsl 추가
 	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
@@ -56,6 +57,7 @@ dependencies {
 	implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.29.0'
 	testImplementation 'org.seleniumhq.selenium:selenium-java:4.29.0'
 
+	// JUnit5
 	testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
 }
 

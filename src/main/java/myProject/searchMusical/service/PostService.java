@@ -1,8 +1,8 @@
 package myProject.searchMusical.service;
 
 import lombok.RequiredArgsConstructor;
-import myProject.searchMusical.domain.Board;
-import myProject.searchMusical.repository.BoardRepository;
+import myProject.searchMusical.entity.Post;
+import myProject.searchMusical.repository.PostRepository;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,9 +14,9 @@ import java.util.List;
 @Service
 @Transactional(readOnly = true)
 @RequiredArgsConstructor
-public class BoardService {
+public class PostService {
 
-    private final BoardRepository boardRepository;
+    private final PostRepository postRepository;
 
     private final WebDriver webDriver;
     @Transactional
@@ -33,12 +33,12 @@ public class BoardService {
             String date = e.findElement(By.className("date")).getText();
 
             if(content.contains("계명가족 특별할인 안내")) {
-                boardRepository.save(new Board(content, writer, date));
+                postRepository.save(new Post(content, writer, date));
             }
         }
     }
 
-    public List<Board> findAll() {
-        return boardRepository.findAll();
+    public List<Post> findAll() {
+        return postRepository.findAll();
     }
 }

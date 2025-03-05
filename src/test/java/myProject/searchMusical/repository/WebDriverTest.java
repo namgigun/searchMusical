@@ -1,19 +1,15 @@
 package myProject.searchMusical.repository;
 
-import jakarta.persistence.EntityManager;
 import lombok.extern.log4j.Log4j2;
-import myProject.searchMusical.domain.Board;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Duration;
-import java.util.List;
 
 @SpringBootTest
 @Log4j2
