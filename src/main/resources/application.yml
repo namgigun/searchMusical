@@ -19,4 +19,3 @@ spring:
 logging:
   level:
     org.hibernate.SQL : debug
-  config: classpath:log4j2.xml

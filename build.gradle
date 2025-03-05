@@ -17,11 +17,6 @@ configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
-
-	all {
-		//logback과의 충돌 방지 (log4j2 설정)
-		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
-	}
 }
 
 repositories {
@@ -43,9 +38,6 @@ dependencies {
 	// 테스트 코드에 롬복 적용하기
 	testCompileOnly 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
-
-	// log4j2 설정
-	implementation 'org.springframework.boot:spring-boot-starter-log4j2'
 
 	//Querydsl 추가
 	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
