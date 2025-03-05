@@ -19,6 +19,11 @@ public class PostService {
     private final PostRepository postRepository;
 
     private final WebDriver webDriver;
+
+    /**
+     * 크롬 드라이브를 통해 게시글 정보를 모두 가져온다.
+     * 가져온 글 중 "계명가족 특별할인 안내"라는 문구가 있다면 그것을 DB에 저장
+     */
     @Transactional
     public void load() {
         webDriver.get("https://www.kmu.ac.kr/page.jsp?mnu_uid=143");
@@ -38,6 +43,9 @@ public class PostService {
         }
     }
 
+    /**
+     * DB 안에 있는 게시글들을 조회한다.
+     */
     public List<Post> findAll() {
         return postRepository.findAll();
     }

@@ -1,6 +1,7 @@
 package myProject.searchMusical.repository;
 
 import lombok.extern.log4j.Log4j2;
+import myProject.searchMusical.entity.Post;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Duration;
+import java.util.List;
 
 @SpringBootTest
 @Log4j2
@@ -19,22 +21,14 @@ public class WebDriverTest {
     @Autowired
     WebDriver driver;
 
+    @Autowired
+    PostRepository postRepository;
+
     @Test
     public void test() {
-        driver.get("https://www.selenium.dev/selenium/web/web-form.html");
+        driver.get("https://kream.co.kr/");
 
-        driver.getTitle();
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
-
-        WebElement textBox = driver.findElement(By.name("my-text"));
-        WebElement submitButton = driver.findElement(By.cssSelector("button"));
-
-        textBox.sendKeys("Selenium");
-        submitButton.click();
-
-        WebElement message = driver.findElement(By.id("message"));
-        message.getText();
+        log.info(driver.getTitle());
 
         driver.quit();
     }
