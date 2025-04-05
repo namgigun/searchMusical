@@ -1,5 +1,6 @@
 # 뮤지컬 할인소식을 알려주는 나만의 게시판
 Spring Boot를 사용해 개발한 간단한 게시판 서비스입니다.
+[블로그->](https://velog.io/@namgigun/series/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 <br/>
 <br/>
 
